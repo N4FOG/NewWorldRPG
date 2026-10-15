@@ -1,0 +1,364 @@
+[
+  {
+    "id": "proc_salt_evaporation",
+    "name": "Extração de Sal por Evaporação",
+    "category": "Processamento Básico",
+    "description": "Ferve água salgada na fogueira até que o líquido evapore por completo, restando preciosos cristais de sal puro para tempero e conservação.",
+    "cookware": "Panela",
+    "heat_required": "Fogo Vivo",
+    "prep_minutes": 5,
+    "cook_minutes": 45,
+    "ingredients": [
+      { "item_id": "water_salt", "tag": "Liquid_SaltWater", "name": "Água Salgada / Salmoura", "qty": 2, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "salt_pure", "name": "Sal Mineral Puro", "qty_min": 2, "qty_max": 4 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 5.0,
+      "nutrition": 0,
+      "thirst": 0,
+      "energy": -3
+    }
+  },
+  {
+    "id": "proc_salt_water_prep",
+    "name": "Preparo de Salmoura",
+    "category": "Processamento Básico",
+    "description": "Dissolve sal mineral em água fervente para criar uma salmoura densa, essencial para curar carnes e peixes contra o apodrecimento.",
+    "cookware": "Panela",
+    "heat_required": "Brasa",
+    "prep_minutes": 3,
+    "cook_minutes": 10,
+    "ingredients": [
+      { "item_id": "water", "tag": "Liquid_Water", "name": "Água Limpa", "qty": 1, "consumed": true },
+      { "item_id": "salt", "tag": "Seasoning_Salt", "name": "Sal", "qty": 2, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "water_salt", "name": "Salmoura Conservante", "qty_min": 1, "qty_max": 1 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 0,
+      "nutrition": 0,
+      "thirst": 0,
+      "energy": -1
+    }
+  },
+  {
+    "id": "proc_rye_flour",
+    "name": "Moagem de Grãos de Centeio",
+    "category": "Processamento Básico",
+    "description": "Tritura grãos de centeio nórdico usando duas pedras chatas de moer (quern) até obter farinha escura rica em fibras.",
+    "cookware": "Pedra de Moer",
+    "heat_required": "Nenhum",
+    "prep_minutes": 20,
+    "cook_minutes": 0,
+    "ingredients": [
+      { "item_id": "grain_rye", "tag": "Cereal_Grain", "name": "Grãos de Centeio", "qty": 4, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "flour_rye", "name": "Farinha de Centeio Rústica", "qty_min": 3, "qty_max": 4 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 0,
+      "nutrition": 0,
+      "thirst": 0,
+      "energy": -8
+    }
+  },
+  {
+    "id": "proc_purify_water",
+    "name": "Fervura e Purificação de Água",
+    "category": "Processamento Básico",
+    "description": "Ferve água coletada de rios ou do degelo da neve para matar bactérias e parasitas da floresta boreal.",
+    "cookware": "Panela",
+    "heat_required": "Fogo Vivo",
+    "prep_minutes": 2,
+    "cook_minutes": 15,
+    "ingredients": [
+      { "item_id": "water_raw", "tag": "Liquid_RawWater", "name": "Água Silvestre Bruta", "qty": 1, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "water", "name": "Água Pura Esterilizada", "qty_min": 1, "qty_max": 1 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 5.0,
+      "nutrition": 0,
+      "thirst": 0,
+      "energy": -1
+    }
+  },
+  {
+    "id": "proc_purify_toxic_mushroom",
+    "name": "Purificação de Falsa-Morchella (Desintoxicação)",
+    "category": "Processamento Básico",
+    "description": "Método tradicional ancestral: ferve cogumelos orelha-negra (falsa-morchella) em abundante água fervente por 10 minutos e drena a água tóxica, neutralizando o veneno letal.",
+    "cookware": "Panela",
+    "heat_required": "Fogo Vivo",
+    "prep_minutes": 5,
+    "cook_minutes": 20,
+    "ingredients": [
+      { "item_id": "shroom_toxic", "tag": "Mushroom_Toxic", "name": "Cogumelo-Orelha-Negra (Tóxico)", "qty": 3, "consumed": true },
+      { "item_id": "water", "tag": "Liquid_Water", "name": "Água Limpa", "qty": 2, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "shroom_purified", "name": "Cogumelos Boreal Drenados (Seguros)", "qty_min": 3, "qty_max": 3 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 5.0,
+      "nutrition": 0,
+      "thirst": 0,
+      "energy": -3
+    }
+  },
+  {
+    "id": "proc_butter_churn",
+    "name": "Batedura de Manteiga Rústica",
+    "category": "Processamento Básico",
+    "description": "Bate leite espesso de rena ou vaca vigorosamente em jarro de madeira com sal até a gordura se separar em bloco cremoso.",
+    "cookware": "Batedor de Madeira",
+    "heat_required": "Nenhum",
+    "prep_minutes": 25,
+    "cook_minutes": 0,
+    "ingredients": [
+      { "item_id": "milk", "tag": "Liquid_Milk", "name": "Leite Fresco", "qty": 3, "consumed": true },
+      { "item_id": "salt", "tag": "Seasoning_Salt", "name": "Sal", "qty": 1, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "butter", "name": "Manteiga Salgada da Taiga", "qty_min": 2, "qty_max": 2 },
+      { "item_id": "whey", "name": "Soro de Leite (Líquido)", "qty_min": 1, "qty_max": 1 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 0,
+      "nutrition": 0,
+      "thirst": 0,
+      "energy": -10
+    }
+  },
+  {
+    "id": "base_bone_broth",
+    "name": "Caldo Dourado de Ossos e Tutano",
+    "category": "Bases e Molhos",
+    "description": "Cozimento lento de ossos de alce partidos na água com sal e folhas secas. Libera colágeno, gordura pura e minerais restauradores.",
+    "cookware": "Panela",
+    "heat_required": "Brasa",
+    "prep_minutes": 10,
+    "cook_minutes": 90,
+    "ingredients": [
+      { "item_id": "bones", "tag": "Bones_Marrow", "name": "Ossos com Tutano", "qty": 2, "consumed": true },
+      { "item_id": "water", "tag": "Liquid_Water", "name": "Água Limpa", "qty": 2, "consumed": true },
+      { "item_id": "salt", "tag": "Seasoning_Salt", "name": "Sal", "qty": 1, "consumed": true },
+      { "item_id": "knife", "tag": "Tool_Knife", "name": "Faca (para quebrar osso)", "qty": 1, "consumed": false }
+    ],
+    "products": [
+      { "item_id": "bone_broth", "name": "Caldo Dourado de Tutano", "qty_min": 2, "qty_max": 2 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 25.0,
+      "nutrition": 20,
+      "thirst": 35,
+      "energy": 10
+    }
+  },
+  {
+    "id": "base_birch_butter",
+    "name": "Manteiga de Ervas e Folhas de Bétula",
+    "category": "Bases e Molhos",
+    "description": "Manteiga salgada misturada com folhas jovens aromáticas de bétula e cebolinho picado. Adiciona sabor herbal e vitaminas a qualquer prato.",
+    "cookware": "Faca",
+    "heat_required": "Nenhum",
+    "prep_minutes": 10,
+    "cook_minutes": 0,
+    "ingredients": [
+      { "item_id": "butter", "tag": "Fat_Butter", "name": "Manteiga Salgada", "qty": 2, "consumed": true },
+      { "item_id": "leaves_birch", "tag": "Leaf_Birch", "name": "Folhas Jovens de Bétula", "qty": 3, "consumed": true },
+      { "item_id": "salt", "tag": "Seasoning_Salt", "name": "Sal", "qty": 1, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "herb_butter", "name": "Manteiga Herbal da Bétula", "qty_min": 2, "qty_max": 2 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 5.0,
+      "nutrition": 15,
+      "thirst": 0,
+      "energy": 5
+    }
+  },
+  {
+    "id": "dish_mushroom_soup",
+    "name": "Sopa Tradicional de Cogumelos e Folhas de Bétula",
+    "category": "Sopas e Pratos Quentes",
+    "description": "O clássico do andarilho da taiga: cogumelos picados, folhas aromáticas de bétula, água limpa e sal, fervidos até formar um caldo aromático e reconfortante.",
+    "cookware": "Panela",
+    "heat_required": "Fogo Vivo",
+    "prep_minutes": 10,
+    "cook_minutes": 25,
+    "ingredients": [
+      { "item_id": "mushrooms", "tag": "Mushroom_Edible", "name": "Cogumelos Silvestres Comestíveis", "qty": 3, "consumed": true },
+      { "item_id": "leaves_birch", "tag": "Leaf_Birch", "name": "Folhas Aromáticas de Bétula", "qty": 2, "consumed": true },
+      { "item_id": "water", "tag": "Liquid_Water", "name": "Água Limpa", "qty": 1, "consumed": true },
+      { "item_id": "salt", "tag": "Seasoning_Salt", "name": "Sal", "qty": 1, "consumed": true },
+      { "item_id": "knife", "tag": "Tool_Knife", "name": "Faca (para fatiar)", "qty": 1, "consumed": false }
+    ],
+    "products": [
+      { "item_id": "soup_mushroom", "name": "Tigela de Sopa Boreal de Cogumelos", "qty_min": 2, "qty_max": 3 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 30.0,
+      "nutrition": 35,
+      "thirst": 40,
+      "energy": 15
+    }
+  },
+  {
+    "id": "dish_elk_stew",
+    "name": "Ensopado Rústico de Alce com Raízes e Tutano",
+    "category": "Sopas e Pratos Quentes",
+    "description": "Pedaços suculentos de carne de alce cozidos lentamente com caldo de tutano, raízes silvestres de nabo e gordura. Saciedade máxima contra o inverno rigoroso.",
+    "cookware": "Panela",
+    "heat_required": "Brasa",
+    "prep_minutes": 15,
+    "cook_minutes": 60,
+    "ingredients": [
+      { "item_id": "meat_raw", "tag": "Meat_Quadruped", "name": "Carne de Caça (Alce, Rena ou Urso)", "qty": 3, "consumed": true },
+      { "item_id": "bone_broth", "tag": "Liquid_Broth", "name": "Caldo de Tutano", "qty": 1, "consumed": true },
+      { "item_id": "root_turnip", "tag": "Vegetable_Root", "name": "Nabo Silvestre ou Raízes", "qty": 2, "consumed": true },
+      { "item_id": "salt", "tag": "Seasoning_Salt", "name": "Sal", "qty": 1, "consumed": true },
+      { "item_id": "knife", "tag": "Tool_Knife", "name": "Faca", "qty": 1, "consumed": false }
+    ],
+    "products": [
+      { "item_id": "stew_elk", "name": "Caldeirão de Ensopado de Alce da Taiga", "qty_min": 2, "qty_max": 3 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 45.0,
+      "nutrition": 70,
+      "thirst": 25,
+      "energy": 25
+    }
+  },
+  {
+    "id": "dish_salmon_soup",
+    "name": "Lohikeitto (Sopa Nórdica de Peixe com Nata)",
+    "category": "Sopas e Pratos Quentes",
+    "description": "Receita sagrada das vilas costeiras finlandesas. Postas tenras de truta ou salmão em caldo cremoso com leite, ervas e raízes.",
+    "cookware": "Panela",
+    "heat_required": "Fogo Vivo",
+    "prep_minutes": 12,
+    "cook_minutes": 30,
+    "ingredients": [
+      { "item_id": "fish_raw", "tag": "Fish_Freshwater", "name": "Peixe Fresco (Truta ou Salmão)", "qty": 2, "consumed": true },
+      { "item_id": "milk", "tag": "Liquid_Milk", "name": "Leite ou Nata", "qty": 1, "consumed": true },
+      { "item_id": "water", "tag": "Liquid_Water", "name": "Água Limpa", "qty": 1, "consumed": true },
+      { "item_id": "herbs", "tag": "Herb_Aromatic", "name": "Ervas da Floresta", "qty": 2, "consumed": true },
+      { "item_id": "salt", "tag": "Seasoning_Salt", "name": "Sal", "qty": 1, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "soup_salmon", "name": "Lohikeitto Tradicional Escandinavo", "qty_min": 2, "qty_max": 3 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 40.0,
+      "nutrition": 55,
+      "thirst": 35,
+      "energy": 20
+    }
+  },
+  {
+    "id": "dish_flatbread_stone",
+    "name": "Pão Chato Nórdico na Pedra (Rieska)",
+    "category": "Assados e Pães",
+    "description": "Massa simples de centeio ou cevada, água e sal, amassada em discos finos e assada diretamente sobre uma pedra lisa encostada nas brasas vivas.",
+    "cookware": "Pedra Chata",
+    "heat_required": "Brasa",
+    "prep_minutes": 10,
+    "cook_minutes": 15,
+    "ingredients": [
+      { "item_id": "flour_rye", "tag": "Cereal_Flour", "name": "Farinha de Grãos", "qty": 3, "consumed": true },
+      { "item_id": "water", "tag": "Liquid_Water", "name": "Água Limpa", "qty": 1, "consumed": true },
+      { "item_id": "salt", "tag": "Seasoning_Salt", "name": "Sal", "qty": 1, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "flatbread", "name": "Pão Chato Rieska Dourado", "qty_min": 3, "qty_max": 4 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 15.0,
+      "nutrition": 40,
+      "thirst": -5,
+      "energy": 20
+    }
+  },
+  {
+    "id": "dish_spit_trout",
+    "name": "Truta Selada no Espeto de Carvalho",
+    "category": "Assados e Pães",
+    "description": "Truta fresca salgada e espetada em galho verde de carvalho, assada lentamente sobre o fogo crepitante até a pele ficar estaladiça.",
+    "cookware": "Espeto de Madeira",
+    "heat_required": "Fogo Vivo",
+    "prep_minutes": 5,
+    "cook_minutes": 20,
+    "ingredients": [
+      { "item_id": "fish_raw", "tag": "Fish_Freshwater", "name": "Peixe Fresco", "qty": 1, "consumed": true },
+      { "item_id": "salt", "tag": "Seasoning_Salt", "name": "Sal", "qty": 1, "consumed": true },
+      { "item_id": "twigs", "tag": "Tool_Spit", "name": "Espeto de Madeira", "qty": 1, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "trout_roasted", "name": "Truta Defumada na Brasa", "qty_min": 1, "qty_max": 1 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 20.0,
+      "nutrition": 35,
+      "thirst": -5,
+      "energy": 15
+    }
+  },
+  {
+    "id": "dish_berry_porridge",
+    "name": "Mingau Nórdico de Bagas Silvestres",
+    "category": "Sopas e Pratos Quentes",
+    "description": "Farinha de cevada cozida lentamente em água fervente com mirtilos silvestres doces e uma generosa noz de manteiga.",
+    "cookware": "Panela",
+    "heat_required": "Brasa",
+    "prep_minutes": 5,
+    "cook_minutes": 20,
+    "ingredients": [
+      { "item_id": "flour_rye", "tag": "Cereal_Flour", "name": "Farinha de Grãos", "qty": 2, "consumed": true },
+      { "item_id": "berries", "tag": "Berries_Wild", "name": "Frutas Silvestres da Taiga", "qty": 4, "consumed": true },
+      { "item_id": "water", "tag": "Liquid_Water", "name": "Água Limpa", "qty": 1, "consumed": true },
+      { "item_id": "butter", "tag": "Fat_Butter", "name": "Manteiga Salgada", "qty": 1, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "porridge_berry", "name": "Tigela de Mingau Quente de Bagas", "qty_min": 2, "qty_max": 2 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 30.0,
+      "nutrition": 45,
+      "thirst": 15,
+      "energy": 30
+    }
+  },
+  {
+    "id": "feast_taiga_hunter",
+    "name": "Banquete dos Caçadores da Taiga",
+    "category": "Grandes Banquetes e Rituais",
+    "description": "Uma refeição monumental inspirada nos banquetes do BDO e nas noites de caça nórdicas. Reúne ensopado encorpado, pão fresco com manteiga de ervas e peixe defumado. Concede o efeito lendário 'Sangue de Ferro'.",
+    "cookware": "Panela",
+    "heat_required": "Fogo Vivo",
+    "prep_minutes": 20,
+    "cook_minutes": 40,
+    "ingredients": [
+      { "item_id": "stew_elk", "tag": "Dish_Stew", "name": "Ensopado de Alce", "qty": 1, "consumed": true },
+      { "item_id": "flatbread", "tag": "Bread_Flatbread", "name": "Pão Chato Rieska", "qty": 2, "consumed": true },
+      { "item_id": "herb_butter", "tag": "Condiment_Butter", "name": "Manteiga Herbal", "qty": 1, "consumed": true },
+      { "item_id": "trout_roasted", "tag": "Dish_RoastedFish", "name": "Truta Defumada na Brasa", "qty": 1, "consumed": true }
+    ],
+    "products": [
+      { "item_id": "feast_hunter", "name": "Banquete Sagrado do Caçador Nórdico", "qty_min": 1, "qty_max": 1 }
+    ],
+    "survival_effects": {
+      "warmth_bonus": 100.0,
+      "nutrition": 100,
+      "thirst": 50,
+      "energy": 50,
+      "special_buff": "Sangue de Ferro: Imunidade a Hipotermia por 12 horas e regeneração acelerada."
+    }
+  }
+]

@@ -1,0 +1,49 @@
+# Build output
+bin/
+obj/
+
+# .NET SDK / IDE
+*.userprefs
+.vs/
+.vscode/
+*.user
+*.suo
+*.csproj.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / debug dumps
+*.log
+debug_*.txt
+init_log.txt
+
+# URW game files that are not part of the wrapper project
+urw.exe
+urw.exe.bak
+urw_ptbr.exe
+Uninstall.exe
+*.dll
+KAYTTO*.DAT
+*.DAT
+*.nfo
+*.fnt
+*.bmp
+urwicon.ico
+urwicon-32.png
+winpos.dat
+MENULIST.SAV
+urw_ini.txt
+RNDCAMP.*
+RNDHOUSE.DAT
+eastf.dat
+eastm.dat
+northf.dat
+northm.dat
+westf.dat
+westm.dat
+linedist.arr
+
+# Misc generated
+*.pdb
